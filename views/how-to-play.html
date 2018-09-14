@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Landsweeper</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <p>
+      <a href="#" onclick="javascript:location.history.back();return false;">
+        Return to game
+      </a>
+    </p>
+    <p>
+      <strong>
+        Landsweeper
+      </strong>
+      by
+      <a href="https://johnholdun.com" target="_blank">
+        John Holdun
+      </a>
+    </p>
+    <p>
+      At the beginning of the game, players take turns choosing the location of their base. Bases cannot share a tile. Bases start with 5 units.
+    </p>
+    <p>
+      Once all players have placed their bases, standard play begins. At the start of a player’s turn, they receive bonus units. These units are placed on the player’s base. The number of units received corresponds to the farthest occupied tile from base—that is, the shortest path required to travel along occupied tiles from the player's base to their most distant occupied tile.
+    </p>
+    <p>
+      At this point, the player may select any one tile in their control and move any number of units from that tile to a contiguous occupied tile, or a tile that is adjacent to a contiguous occupied tile. A tile is occupied if it contains at least one of the player’s units. A tile cannot contain units belonging to more than one player, but there is no limit to how many units from a single player may occupy one tile.
+    </p>
+    <p>
+      The redistributed units do not all have to end up on the same tile, but once placed they cannot be moved again this turn.
+    </p>
+    <p>
+      A player may move units to a tile occupied by another player if the attacking player occupies a tile adjacent to the target tile and the number of units it is moving is greater than the number of units currently contained by that tile. The attacking units do not need to be adjacent to the target tile before the attack begins, but they must all move to that tile if the attack succeeds. The units on the target tile belonging to the losing player are discarded.
+    </p>
+    <p>
+      When a player’s base is occupied by an opposing player, they lose. Their units will no longer move, but they are not removed from the board and behave defensively as if the player was still in the game.
+    </p>
+    <p>
+      The last player with an active base is the winner.
+    </p>
+  </body>
+</html>
+
